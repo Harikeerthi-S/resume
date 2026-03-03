@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+}
+
+/* Resume Preview */
+#resumePreview {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Two-column layout */
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.resume-left {
+    width: 30%;
+    border-right: 2px solid #eee;
+    padding-right: 20px;
+}
+.resume-right {
+    width: 70%;
+    padding-left: 20px;
+}
+
+/* Profile Image */
+#resumePreview img {
+    border: 3px solid #007bff;
+    padding: 3px;
+}
+
+/* Headings */
+#resumePreview h2 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+#resumePreview h5 {
+    font-weight: 500;
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3px;
+}
+
+/* Text & Links */
+#resumePreview p, #resumePreview small {
+    font-size: 14px;
+    color: #555;
+}
+#resumePreview a {
+    color: #007bff;
+    text-decoration: none;
+}
+#resumePreview a:hover {
+    text-decoration: underline;
+}
+
+/* Skills */
+#resumePreview .badge {
+    background-color: #17a2b8;
+    color: #fff;
+    margin: 3px 2px;
+    font-weight: 500;
+}
+
+/* Experience/Education/Project */
+.exp-item-preview, .edu-item-preview, .proj-item-preview, .cert-item-preview {
+    margin-bottom: 15px;
+    padding-left: 5px;
+    border-left: 3px solid #007bff;
+}
+
+/* Print */
+@media print {
+    nav, form, button {
+        display: none !important;
+    }
+    #resumePreview {
+        box-shadow: none;
+    }
+}
